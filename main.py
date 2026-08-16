@@ -20,7 +20,7 @@ def load_assets():
     """Carga el modelo entrenado y los datos históricos del proceso."""
     try:
         model = joblib.load('modelo_xgboost_final.joblib')
-        df = pd.read_csv('transformed_data.csv')
+        df = pd.read_csv('transformed_data (1).csv')
         return model, df
     except Exception as e:
         st.error(f"Error al cargar los archivos: {e}")
